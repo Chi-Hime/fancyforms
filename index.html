@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="//use.typekit.net/nqt5jvx.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<title>Form Project</title>
+	<link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+	<script>
+		function validate() {
+			valid = true;
+			message = "Please resolve the following:\n";
+			if (document.info.fullname.value == '') {
+				message += "Full name is required.\n";
+				valid = false;
+			}
+			if (document.info.gender[0].checked == false && document.info.gender[1].checked == false) {
+				message += "Gender is required.\n";
+				valid = false;
+			}
+			// after all the validation
+			if (!valid) {
+				console.log("Gender: "+document.info.gender[1].value);
+				alert(message);
+			}
+			if (document.info.day.value == '') {
+				message += "Day of appointment is required.\n";
+				valid = false;
+			}
+			if (document.info.year.value == '') {
+				message += "Year of appointment is required.\n";
+				valid = false;
+			}
+			if (document.info.address.value == '') {
+				message += "Address is required.\n";
+				valid = false;	valid = false;
+			}
+			if (document.info.city.value == '') {
+				message += "City is required.\n";
+				valid = false;
+			}
+			if (document.info.state.value == '') {
+				message += "State is required.\n";
+				valid = false;
+			}
+			if (document.info.zipcode.value == '') {
+				message += "Zipcode is required.\n";
+				valid = false;
+			}
+			if (document.info.phone.value == '') {
+				message += "Phone is required.\n";
+				valid = false;	valid = false;
+				}
+			if (document.info.fax.value == '') {
+				message += "Fax is required.\n";
+				valid = false;	valid = false;
+			}
+			if (document.info.email.value == '') {
+				message += "Email is required.\n";
+			}
+			if (document.info.comments.value == '') {
+				message += "Comments are required.\n";
+				valid = false;
+			}
+			if (document.info.gender[0].checked == false && document.info.gender[1].checked == false) {
+				message += "Gender is required.\n";
+				valid = false;
+			}
+			// after all the validation
+			if (!valid) {
+				console.log("Gender: "+document.info.gender[1].value);
+				alert(message);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<form name="info" method="post" onsubmit="return validate()">
+		<fieldset class="left">
+			<legend>E-MAIL CONTACT FORM</legend>
+			<label><span class="asterix">*</span>Full Name:</label>
+				<input type="text" name="full name" placeholder="Full Name" autofocus="true" required="true" />
+
+			<label><span class="asterix">*</span>Address:</label>
+				<input type="text" name="address" placeholder="Address" required="true" />	
+			
+			<label><span class="asterix">*</span>City:</label>
+				<input type="text" name="city" placeholder="City" required="true" />
+			
+			<label><span class="asterix">*</span>State:</label>
+				<select name="state" required="true">
+				<option value="" selected="true">--choose state--</option>
+					<option value="AL">Alabama</option>
+					<option value="AK">Alaska</option>
+					<option value="AZ">Arizona</option>
+					<option value="AR">Arkansas</option>
+					<option value="CA">California</option>
+					<option value="CO">Colorado</option>
+					<option value="CT">Connecticut</option>
+					<option value="DE">Delaware</option>
+					<option value="FL">Florida</option>
+					<option value="GA">Georgia</option>
+					<option value="HI">Hawaii</option>
+					<option value="ID">Idaho</option>
+					<option value="IL">Illinois</option>
+					<option value="IN">indiana</option>
+					<option value="IA">Iowa</option>
+					<option value="KS">Kansas</option>
+					<option value="KY">Kentucky</option>
+					<option value="LA">Louisiana</option>
+					<option value="ME">Maine</option>
+					<option value="MD">Maryland</option>
+					<option value="MA">Massachusetts</option>
+					<option value="MI">Michigan</option>
+					<option value="MN">Minnesota</option>
+					<option value="MS">Mississippi</option>
+					<option value="MO">Missouri</option>
+					<option value="MT">Montana</option>
+					<option value="NE">Nebraska</option>
+					<option value="NV">Nevada</option>
+					<option value="NH">New Hampshire</option>
+					<option value="NJ">New Jersey</option>
+					<option value="NM">New Mexico</option>
+					<option value="NY">New York</option>
+					<option value="NC">North Carolina</option>
+					<option value="ND">North Dakota</option>
+					<option value="OH">Ohio</option>
+					<option value="OK">Oklahoma</option>
+					<option value="OR">Oregon</option>
+					<option value="PA">Pennsylvania</option>
+					<option value="RI">Rhode Island</option>
+					<option value="SC">South Carolina</option>
+					<option value="SD">South Dakota</option>
+					<option value="TN">Tennessee</option>
+					<option value="TX">Texas</option>
+					<option value="UT">Utah</option>
+					<option value="VT">Vermont</option>
+					<option value="VA">Virginia</option>
+					<option value="WA">Washington</option>
+					<option value="WV">West Virginia</option>
+					<option value="WI">Wisconsin</option>
+					<option value="WY">Wyoming</option>
+
+			<label><span class="asterix">*</span>Zipcode:</label>
+				<input type="text" name="zipcode" placeholder="Zipcode" required="true" />
+
+</fieldset>
+
+			<label><span class="asterix">*</span>Appointment Date:</label>
+
+				<select name="month" required="true">
+					<option value="" selected="true">-Month-</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<select name="day" required="true">
+					<option value="" selected="true">-Day-</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<select name="year" required="true">
+					<option value="" selected="true">-Year-</option>
+					<option value="2013">2015</option>
+					<option value="2013">2016</option>
+					<option value="2012">2017</option>
+					<option value="2011">2018</option>
+					<option value="2010">2019</option>
+					<option value="2013">2020</option>
+				</select>
+
+<label><span class="asterix">*</span>Schedule Time:</label>
+
+				<select name="hours" required="true">
+					<option value="" selected="true">-Hours-</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<select name="minutes" required="true">
+					<option value="" selected="true">-Minutes-</option>
+					<option value="00">00</option>
+					<option value="15">15</option>
+					<option value="30">30</option>
+					<option value="45">45</option>
+					
+					
+				</select>
+			
+			<label><span class="asterix">*</span>Phone:</label>
+				<input type="text" name="phone" placeholder="Phone" required="true" />
+
+			<label><span class="asterix">*</span>FAX:</label>
+				<input type="text" name="fax" placeholder="Fax" required="true" />
+
+			<label><span class="asterix">*</span>Email Address:</label>
+				<input type="email" name="email" placeholder="Email" required="true" /></select>	
+		
+				
+			</fieldset>
+			<fieldset class="clear">			
+			<label><span class="asterix">*</span>Other Comments:</label>
+				<textarea name="comments" rows="5" cols="30" placeholder="Your Comments" required="true"></textarea>
+			</fieldset>
+
+				<label><span class="asterix">*</span>Indicates required field.</label>
+				<input type="submit" value="Send" onclick="validate()" />
+		
+		</form>
+	</div>
+</body>
+<html>

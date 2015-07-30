@@ -1,0 +1,85 @@
+/* CSS for form project */
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+body {
+	font-family: "alverata-irregular-pe";
+	font-weight: 400;
+	background-image: url(http://sokeanglor.aisites.com/ADVANCE_SCRIPTING/Form/background6.jpg);
+}
+form {
+		padding: 1em 3% 1em 3%;
+		background-color: #b8e8ff;
+		box-shadow: 0px 0px 50px 3px black;
+font-family: "alverata-irregular-pe";
+}
+span.asterix {
+	padding: 0em .25em 0em 0em;
+	color: #ab0000;
+}
+label {
+	padding: 2em 0.5em 0.5em 0em;
+	display: block;
+
+}
+label.oneline {
+	padding: 0.5em 0 0 0.5em;
+	display: inline-block;
+}
+legend {
+	padding: .5em 0em 0em 0em;
+	font-weight: bold;
+}
+input {
+	display: inline-block;
+	margin: 0em 1em 1em 1em;
+	padding: .25em;
+
+}
+.left input {
+	width: 15em;
+
+}
+.right input {
+	width: 15em;
+}
+select {
+	padding: 0.5em;
+
+
+}
+textarea {
+	width: 95%;
+	margin: 0.5em;
+
+}
+fieldset.left {
+	border-style:none;
+	width: 50%;
+	min-width: 15em;
+	float: left;
+}
+fieldset.left input {
+	width: 20em;
+
+}
+fieldset.right {
+	width: 50%;
+	float: right;
+	min-width: 16em;
+	border-style:none;
+}
+fieldset.right input {
+	width: 20em;
+
+}	
+fieldset.clear {
+	clear: both;
+
+}
+#wrapper {
+	background: #d0f0ff;
+	width: 80%;
+	max-width: 940px;
+	margin: 2em auto;
+	min-width: 550px
+}
